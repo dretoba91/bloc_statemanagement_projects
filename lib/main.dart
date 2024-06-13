@@ -1,5 +1,3 @@
-import 'package:bloc_state_management_projects/infinite_list/bloc/post_bloc.dart';
-import 'package:bloc_state_management_projects/infinite_list/views/posts.page.dart';
 import 'package:bloc_state_management_projects/todo/cubit/todo_cubit.dart';
 import 'package:bloc_state_management_projects/todo/pages/todo_list.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +20,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           useMaterial3: true,
         ),
-        home: TodoList(),
+        home: const TodoList(),
       ),
     );
   }

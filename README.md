@@ -32,9 +32,11 @@ Fork the repository to your local, and within the main.dart file, you can switch
     dev_dependencies:
     build_runner: ^2.4.10
 
-    The Bloc from Bloc state management package was used to manage the infinite list application state. Three files, bloc_state, bloc_event, and bloc, were generated inside the bloc folder.
+    The Bloc from Bloc state management package was used to manage the infinite list application state. 
+    Three files, bloc_state, bloc_event, and bloc, were generated inside the bloc folder.
     
-    The PostEvent abstract class, which other event classes extend, is contained in the bloc_event files. Thus, the abstract class PostEvent is extended by the PostFetchedEvent. Every event that takes place within the program is managed by this class.
+    The PostEvent abstract class, which other event classes extend, is contained in the bloc_event files. 
+    Thus, the abstract class PostEvent is extended by the PostFetchedEvent. Every event that takes place within the program is managed by this class.
     
     Inside the bloc_state file, there are the enum PostState variables, and the file also contains the abstract PostState class. 
     This PostState class has 3 variables: PostStatus status, List<Post> posts, and bool hasReachedMax, along with the class constructor and data generated.

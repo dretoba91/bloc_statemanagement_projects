@@ -42,6 +42,17 @@ Fork the repository to your local, and within the main.dart file, you can switch
 
 
 ## Todo
+### Required dependencies
+
+    dependencies:
+    bloc: ^8.1.0    
+    flutter:
+        sdk: flutter
+    flutter_bloc: ^8.1.1
+    google_fonts: ^6.2.1    
+
+    dev_dependencies:
+    build_runner: ^2.4.10
 
 
 ## Weather App

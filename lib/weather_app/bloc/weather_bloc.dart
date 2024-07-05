@@ -1,9 +1,9 @@
-import 'dart:developer';
+
 
 import 'package:bloc/bloc.dart';
 import 'package:bloc_state_management_projects/weather_app/data/location_permission.dart';
-import 'package:bloc_state_management_projects/weather_app/data/my_data.dart';
 import 'package:equatable/equatable.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:weather/weather.dart';
 
@@ -16,8 +16,9 @@ class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
       emit(WeatherLoading());
       try {
         // making request to get weather data using the Weather package.
+        
         WeatherFactory weatherFactory =
-            WeatherFactory(API_KEY, language: Language.ENGLISH);
+            WeatherFactory(dotenv.env['api_key']!, language: Language.ENGLISH);
 
         // getting phone current location
         Position position = await LocationUtil().determinePosition();
